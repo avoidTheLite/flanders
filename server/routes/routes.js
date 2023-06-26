@@ -16,7 +16,7 @@ router.get('/route1/:ID', (req,res)=> {
 
 router.get('/route2', (req,res) => {
     //do something with a static route 
-    res.send('Response goes here');
+    res.send('/route2 doesnt have a controller, but you can call it anyways...');
 })
 
 export default router

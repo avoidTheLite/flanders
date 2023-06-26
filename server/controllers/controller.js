@@ -1,4 +1,4 @@
-controllerFunction1 = (req, res) => {
+export function controllerFunction1 = (req, res) => {
 
     const controllerData1 ={
 
@@ -10,5 +10,3 @@ controllerFunction1 = (req, res) => {
     };
 return controllerData1
 };
-
-export {controllerFunction1};

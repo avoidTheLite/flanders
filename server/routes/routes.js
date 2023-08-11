@@ -13,11 +13,11 @@ router.use((req, res, next) => {
 })
 
 router.get('/getroute1/:inputID', (req,res)=> {
-    const inputID = req.params['inputID'];
+    const bodyParam1 = req.params['inputID'];
 
     try {
-        const results = controllers.controllerFunction1(req,res, inputID)
-        const message = `Successfully retrieved with inputID = ${inputID}`
+        const results = controllers.controllerFunction1(req,res, inputID, bodyParam1)
+        const message = `Successfully retrieved with inputID = ${inputID} and bodyParam1 = ${bodyParam1}`
         res.send(successFormatter(message, results, 200))
     const responseJson = controllerFunction1(req,res)
     } catch (error) {
@@ -40,7 +40,7 @@ router.get('/getroute2', (req,res) => {
 })
 
 router.post('/postroute1', jsonParser, async (req,res,) => {
-    
+
     try {
         const results = controllers.controllerFunction3(req,res)
         const message = `Successfully retrieved`

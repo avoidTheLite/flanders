@@ -6,10 +6,10 @@
     "@types/node": "^20.2.5",
     "typescript": "^5.0.4"
   },
-  "name": "risk-die-rest",
+  "name": "flanders-template",
   "version": "1.0.0",
   "type": "module",
-  "description": "Learning app with the intent of supporting rest calls to roll risk dice.",
+  "description": "NodeJS template to use for standing up a quick backend app",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

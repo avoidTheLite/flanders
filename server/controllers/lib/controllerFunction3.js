@@ -1,5 +1,5 @@
-import DBModel from "../../../server/models/DBModel.js";
-import { callExternalAPI } from "../../services/callExternalAPI";
+import DBModel from "../../models/DBModel.js";
+import { callExternalAPI } from "../../services/callExternalAPI.js";
 
 export async function controllerFunction3(req, res) {
     const bodyParameter1 = req.body.bodyParameter1;
